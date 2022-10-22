@@ -56,11 +56,11 @@ function getData(){
             infoBlockDiv.classList.add("INFOBlock");
 
             let fnameP = document.createElement('p');
-            fnameP.innerHTML = fname;
+            fnameP.innerHTML = "First Name: " + fname;
             let lnameP = document.createElement('p');
-            lnameP.innerHTML = lname;
+            lnameP.innerHTML = "Last Name: " +  lname;
             let IDP = document.createElement('p');
-            IDP.innerHTML = ID;
+            IDP.innerHTML = "ID: " +  ID;
             infoBlockDiv.appendChild(fnameP);
             infoBlockDiv.appendChild(lnameP);
             infoBlockDiv.appendChild(IDP);
