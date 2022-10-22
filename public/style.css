@@ -1,0 +1,88 @@
+@font-face {
+    font-family: terminalFont;
+    src: url(source/clacon2.ttf);
+  }
+
+  body{
+    font-family: terminalFont;
+    color: aliceblue;
+   margin: 0;
+  }
+  #leftTerminal{
+    position: absolute;
+    margin: 0;
+    width: 50%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-image: url(source/background.png);
+  }
+
+  #rightTerminal{
+    position: absolute;
+    height: 100vh;
+    right: 0;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-image: url('source/background.png');
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+
+  input{
+    font-family: terminalFont;
+    border-style: solid;
+      border-width: 1px;
+      background-color: darkgrey;
+  }
+
+  form{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+#submit:active{
+    background-color: rgb(64, 63, 63);
+    scale: 1.2;
+}
+
+
+.INFOGroup{
+    display: flex;
+}
+.INFOBlock{
+
+}
+.serialNumber{
+    margin: auto 10px;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+    
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #0b7b0b; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
