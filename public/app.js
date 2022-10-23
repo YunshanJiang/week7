@@ -54,7 +54,7 @@ function getData(){
 
             let infoBlockDiv = document.createElement('div');
             infoBlockDiv.classList.add("INFOBlock");
-
+ 
             let fnameP = document.createElement('p');
             fnameP.innerHTML = "First Name: " + fname;
             let lnameP = document.createElement('p');
